@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Welcome to Pages</h1>
+  <% @post.each do |p| %>
+    <h1><%= link_to p.title, p %></h1>
+    <p><%= p.caption %></p>
+  <% end %>
+
+  <%= link_to 'Create Post', new_post_path %>
+</div>
